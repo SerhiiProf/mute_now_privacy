@@ -14,161 +14,49 @@
     h1, h2 {
       text-align: center;
     }
-    .lang-buttons {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    button {
-      margin: 0 5px;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 6px;
-      background: #1976d2;
-      color: white;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    button:hover {
-      background: #0d47a1;
-    }
-    .lang-section {
-      display: none;
-    }
-    .lang-section.active {
-      display: block;
-    }
   </style>
 </head>
 <body>
   <h1>MuteNow!</h1>
-  <h2>Privacy Policy / Політика конфіденційності / Политика конфиденциальности</h2>
-
-  <div class="lang-buttons">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('uk')">Українська</button>
-    <button onclick="switchLang('ru')">Русский</button>
-  </div>
+  <h2>Privacy Policy</h2>
 
   <!-- English -->
-<div id="en" class="lang-section">
-  <h3>Privacy Policy</h3>
-  <p>The <b>MuteNow!</b> application respects users' right to privacy and operates with the minimum necessary permissions.</p>
-  <h4>What permissions we use and why</h4>
-  <p>For its operation, the application requests the following permissions:</p>
-  <ul>
-    <li>
-      <b>Do Not Disturb Access (ACCESS_NOTIFICATION_POLICY):</b>
-      This permission is required for the core functionality of the app — to switch the phone's sound modes to Silent and back on a timer.
-    </li>
-    <li>
-      <b>Post Notifications (POST_NOTIFICATIONS):</b>
-      This is used to display a status notification when the sound is muted. It allows you to see until what time the mute is active and provides an option to restore the sound prematurely.
-    </li>
-  </ul>
-  <h4>Use of Foreground Service</h4>
-  <p>
-    The application uses a <b>Foreground Service</b> to reliably inform you that the device's sound is muted, as well as to restore the sound at the precisely scheduled time. This is especially important for long mute periods. The foreground service maintains a persistent status notification that cannot be accidentally dismissed. This prevents situations where you might forget that silent mode is enabled. We declare the use of the <b>FOREGROUND_SERVICE_SPECIAL_USE</b> type because we consider continuous user notification about a critical change in the device's state (sound being muted) an important task.
-  </p>
-  <h4>What data we collect and why</h4>
-<p>To ensure the stable operation of the app and to fix bugs, we use Google tools (Firebase Crashlytics and Analytics). These services transmit <strong>100% non-personalized (anonymous)</strong> technical information:</p>
-<ul>
-    <li><strong>Error Reports:</strong> Technical crash reports (device model and the specific line of code where the error occurred), allowing us to provide prompt fixes.</li>
-    <li><strong>Usage Statistics:</strong> General data on how many times specific app features are used (for example, the number of timer starts), which helps us improve the most useful features.</li>
-</ul>
+  <div id="en" class="lang-section active">
+    <h3>Privacy Policy</h3>
+    <p>The <b>MuteNow!</b> application respects users' right to privacy and operates with the minimum necessary permissions.</p>
+    <h4>What permissions we use and why</h4>
+    <p>For its operation, the application requests the following permissions:</p>
+    <ul>
+      <li>
+        <b>Do Not Disturb Access (ACCESS_NOTIFICATION_POLICY):</b>
+        This permission is required for the core functionality of the app — to switch the phone's sound modes to Silent and back on a timer.
+      </li>
+      <li>
+        <b>Post Notifications (POST_NOTIFICATIONS):</b>
+        This is used to display a status notification when the sound is muted. It allows you to see until what time the mute is active and provides an option to restore the sound prematurely.
+      </li>
+    </ul>
+    <h4>Use of Foreground Service</h4>
+    <p>
+      The application uses a <b>Foreground Service</b> to reliably inform you that the device's sound is muted, as well as to restore the sound at the precisely scheduled time. This is especially important for long mute periods. The foreground service maintains a persistent status notification that cannot be accidentally dismissed. This prevents situations where you might forget that silent mode is enabled. We declare the use of the <b>FOREGROUND_SERVICE_SPECIAL_USE</b> type because we consider continuous user notification about a critical change in the device's state (sound being muted) an important task.
+    </p>
+    <h4>What data we collect and why</h4>
+    <p>To ensure the stable operation of the app and to fix bugs, we use Google tools (Firebase Crashlytics and Analytics). These services transmit <strong>100% non-personalized (anonymous)</strong> technical information:</p>
+    <ul>
+      <li><strong>Error Reports:</strong> Technical crash reports (device model and the specific line of code where the error occurred), allowing us to provide prompt fixes.</li>
+      <li><strong>Usage Statistics:</strong> General data on how many times specific app features are used (for example, the number of timer starts), which helps us improve the most useful features.</li>
+    </ul>
 
-<h4>What data we DO NOT collect</h4>
-<ul>
-    <li>We do not collect, store, or share any of your personal data (name, email, or phone number).</li>
-    <li>We do not access your contacts, files, camera, or microphone.</li>
-    <li>We do not collect hardware identifiers of your device (such as IMEI or serial number).</li>
-    <li>All your timer settings and schedules are stored <strong>exclusively locally</strong> on your device and are never transmitted to our servers.</li>
-</ul>
+    <h4>What data we DO NOT collect</h4>
+    <ul>
+      <li>We do not collect, store, or share any of your personal data (name, email, or phone number).</li>
+      <li>We do not access your contacts, files, camera, or microphone.</li>
+      <li>We do not collect hardware identifiers of your device (such as IMEI or serial number).</li>
+      <li>All your timer settings and schedules are stored <strong>exclusively locally</strong> on your device and are never transmitted to our servers.</li>
+    </ul>
 
-  <h4>Contact Us</h4>
-  <p>If you have any questions about privacy or data security, please contact us: <b>w2125858@gmail.com</b></p>
-</div>
-
-  <!-- Українська -->
-<div id="uk" class="lang-section">
-  <h3>Політика конфіденційності</h3>
-  <p>Застосунок <b>MuteNow!</b> поважає право користувачів на конфіденційність і працює з мінімально необхідними дозволами.</p>
-  <h4>Які дозволи ми використовуємо і навіщо</h4>
-  <p>Для своєї роботи застосунок запитує такі дозволи:</p>
-  <ul>
-    <li>
-      <b>Доступ до режиму "Не турбувати" (ACCESS_NOTIFICATION_POLICY):</b>
-      Цей дозвіл необхідний для основної функції застосунку — перемикання звукових режимів телефону в "Без звуку" та назад за таймером.
-    </li>
-    <li>
-      <b>Надсилання сповіщень (POST_NOTIFICATIONS):</b>
-      Використовується для відображення сповіщення про статус, коли звук вимкнено. Це дозволяє вам бачити, до якого часу активне заглушення, і дає можливість відновити звук достроково.
-    </li>
-  </ul>
-  <h4>Використання Фонової служби (Foreground Service)</h4>
-  <p>
-    Застосунок використовує <b>Foreground Service</b>, щоб гарантовано інформувати вас про те, що звук на пристрої вимкнено, а також для ввімкнення звуку точно в запланований час. Це особливо важливо для тривалих періодів заглушення. Фонова служба підтримує постійне сповіщення про статус, яке неможливо випадково закрити. Це запобігає ситуаціям, коли ви можете забути про ввімкнений беззвучний режим. Ми заявляємо про використання типу <b>FOREGROUND_SERVICE_SPECIAL_USE</b>, оскільки вважаємо безперервне інформування користувача про критичну зміну стану пристрою (вимкнення звуків) важливим завданням.
-  </p>
-  <h4>Які дані ми збираємо та навіщо</h4>
-<p>Для забезпечення стабільної роботи додатка та виправлення помилок ми використовуємо інструменти Google (Firebase Crashlytics та Analytics). Ці сервіси передають <strong>100% неперсоніфіковану (анонімну)</strong> технічну інформацію:</p>
-<ul>
-    <li><strong>Звіти про помилки:</strong> Технічні звіти про збої (модель пристрою та рядок коду, що викликав помилку), щоб ми могли оперативно їх виправляти.</li>
-    <li><strong>Статистика використання:</strong> Загальні дані про кількість запусків функцій додатка (наприклад, кількість запусків таймера), які допомагають нам розвивати найбільш корисні можливості.</li>
-</ul>
-
-<h4>Які дані ми НЕ збираємо</h4>
-<ul>
-    <li>Ми не збираємо, не зберігаємо та не передаємо жодні ваші персональні дані (ім'я, email, номер телефону).</li>
-    <li>Ми не отримуємо доступ до ваших контактів, файлів, камери або мікрофона.</li>
-    <li>Ми не збираємо апаратні ідентифікатори вашого пристрою (IMEI, серійний номер).</li>
-    <li>Усі ваші налаштування таймера та розкладу зберігаються <strong>виключно локально</strong> на вашому пристрої та ніколи не передаються на наші сервери.</li>
-</ul>
-  <h4>Контакти</h4>
-  <p>Якщо у вас є питання щодо конфіденційності або безпеки даних, будь ласка, зв'яжіться з нами: <b>w2125858@gmail.com</b></p>
-</div>
-
-  <!-- Russian -->
-<div id="ru" class="lang-section">
-  <h3>Политика конфиденциальности</h3>
-  <p>Приложение <b>MuteNow!</b> уважает право пользователей на конфиденциальность и работает с минимально необходимыми разрешениями.</p>
-    <h4>Какие разрешения мы используем и зачем</h4>
-  <p>Для своей работы приложение запрашивает следующие разрешения:</p>
-  <ul>
-    <li>
-      <b>Доступ к режиму "Не беспокоить" (ACCESS_NOTIFICATION_POLICY):</b>
-      Это разрешение необходимо для основной функции приложения — переключения звуковых режимов телефона в "Без звука" и обратно по таймеру.
-    </li>
-    <li>
-      <b>Отправка уведомлений (POST_NOTIFICATIONS):</b>
-      Используется для отображения уведомления о статусе, когда звук выключен. Это позволяет вам видеть, до какого времени активно заглушение, и дает возможность восстановить звук досрочно.
-    </li>
-  </ul>
-  <h4>Использование Фоновой службы (Foreground Service)</h4>
-  <p>
-    Приложение использует <b>Foreground Service</b>, чтобы гарантированно информировать вас о том, что звук на устройстве выключен, а также для включения звука точно в запланированное время. Это особенно важно для длительных периодов заглушения. Фоновая служба поддерживает постоянное уведомление о статусе, которое не может быть случайно смахнуто. Это предотвращает ситуации, когда вы можете забыть о включенном беззвучном режиме. Мы заявляем использование типа <b>FOREGROUND_SERVICE_SPECIAL_USE</b>, так как считаем непрерывное информирование пользователя о критическом изменении состояния устройства (отключении звуков) важной задачей.
-  </p>
-   <h4>Какие данные мы собираем и зачем</h4>
-<p>Для обеспечения стабильной работы приложения и исправления ошибок мы используем инструменты Google (Firebase Crashlytics и Analytics). Эти сервисы передают <strong>100% не-персонализированную (анонимную)</strong> техническую информацию:</p>
-<ul>
-    <li><strong>Информация об ошибках:</strong> Технические отчеты о сбоях (модель устройства и место ошибки в коде), чтобы мы могли оперативно их исправлять.</li>
-    <li><strong>Статистика использования:</strong> Общие данные о количестве запусков функций приложения (например, количество запусков таймера).</li>
-</ul>
-
-<h4>Какие данные мы НЕ собираем</h4>
-<ul>
-    <li>Мы не собираем, не храним и не передаем никакие ваши персональные данные (имя, email, номер телефона).</li>
-    <li>Мы не получаем доступ к вашим контактам, файлам, камере или микрофону.</li>
-    <li>Мы не собираем аппаратные идентификаторы вашего устройства (IMEI, серийный номер).</li>
-    <li>Все ваши настройки таймера и расписания хранятся <strong>исключительно локально</strong> на вашем устройстве и никогда не передаются на наши серверы.</li>
-</ul>
-  <h4>Контакты</h4>
-  <p>Если у вас есть вопросы по поводу конфиденциальности или безопасности данных, пожалуйста, свяжитесь с нами: <b>w2125858@gmail.com</b></p>
-</div>
-
-  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('.lang-section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-    }
-  </script>
+    <h4>Contact Us</h4>
+    <p>If you have any questions about privacy or data security, please contact us: <b>w2125858@gmail.com</b></p>
+  </div>
 </body>
 </html>
